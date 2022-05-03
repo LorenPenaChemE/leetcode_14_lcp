@@ -4,6 +4,10 @@ def longestCommonPrefix(strs):
 
     #initizlize empty string
     sub_str = ""
+    
+    #If there are not strings in strs then return "Empty List"
+    if len(strs) == 0:
+        raise IndexError
 
     #find the shortest length string in strs
     for s in strs:
